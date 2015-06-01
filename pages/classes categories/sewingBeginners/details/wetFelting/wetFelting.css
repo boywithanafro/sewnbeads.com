@@ -1,0 +1,1320 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;
+}
+
+/*******************************************************************************************/
+/* Mobile Layout: 480px and below. */
+/*******************************************************************************************/
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Oswald";
+}
+
+
+body{
+  background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.headWrapper{
+	text-align: center;
+	height: 280px;
+	width: 99.4%;
+	border-width: 4px;
+	border-style: dashed;
+	border-top-color: #cccccc;
+	border-left-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: transparent;
+}
+
+#pageTitle{
+	text-align: center;
+	color: #E065CA;
+	margin-top: -265px;
+	font-size: 125px;
+	width: 100%;
+}
+
+#backupSocialGroup{
+        display: block;
+	float: right;
+	width: 60px;
+	height: auto;
+	margin: -12em 0.5em 0em 0em;
+}
+
+#backupSocialInstagram{
+	cursor: default;
+}
+
+#backupIconInstagram{
+	display: none;
+	width: 48px;
+	margin-bottom: 0.5em;
+}
+
+#backupIconTwitter{
+	display: none;
+	width: 48px;
+	margin-bottom: 0.5em;
+}
+
+#backupIconFacebook{
+	display: none;
+	width: 48px;
+}
+
+#socialGroup{
+	float: right;
+	width: 300px;
+	height: auto;
+	margin: -5em 1em 0em 0em;
+}
+
+.socialInstagram{
+	width: 48px;
+	width: 48px;
+	padding: 0px;
+	margin: 0em 0.5em 0em 0em;
+}
+
+.socialInstagram:hover{
+	border: 3px dotted #41F0F0;
+	cursor: default;
+}
+
+.nav{
+	overflow: hidden;
+	text-align: center;
+	background-color: #E83199;
+	height: auto;
+	margin-top: -20px;
+}
+
+.nav li{
+	text-align: center;
+	display: inline-block;
+	margin-right: 10%;
+	font-size: 30px;
+	width: auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.nav li:hover{
+	color: #FAFAFA;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	margin-top: 20px;
+}
+
+.contentWrapper{
+	margin-top: 7em;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 8px;
+	border-style: dashed;
+	border-top-color: #E065CA;
+	border-left-color: #E065CA;
+	border-right-color: #A31C8A;
+	border-bottom-color: #A31C8A;
+	height: 1600px;
+	width: 60%;
+	background-color: #FAFAFA;
+	font-family: 'Lobster', cursive;
+	color: #cccccc;
+	z-index: 2;
+}
+
+#contentTitle{
+	color: #474AEA;
+	text-align: center;
+	font-size: 100px;
+	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
+}
+
+.rslides {
+	text-align: center;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 90%;
+	height: 200px;
+	padding: 0;
+	margin: 0 auto;
+	border-radius: 14px;
+	}
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 200px;
+	left: 0;
+	top: 0;
+	}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	height: 200px;
+	border: 0;
+	border-radius: 14px;
+	}
+
+.writingWrapper{
+	margin: 0 auto;
+	width: 85%;
+	height: auto;
+}
+
+.writingWrapper > p{
+	text-align: center;
+	color: #000;
+	font-size: 24px;
+}
+
+.writingWrapper > h6{
+	color: #000;
+	text-align: center;
+}
+
+#subheadingInfo{
+	float: left;
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+#extraInfo{
+	float: left;
+	color: #4B4D49;
+	font-size: 16px;
+}
+
+#extraInfo:hover{
+	color: #E065CA;
+}
+
+#classPicture{
+	float: right;
+	height: 300px;
+	width: 50%;
+	border: 1px solid red;
+	margin-top: -300px;
+	background-image: url("../../../../../sewing.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+form{
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
+}
+
+#userEmail{
+	width: 30%;
+	text-align: center;
+}
+
+#userName{
+	width: 30%;
+	text-align: center;
+}
+
+#userComments{
+	width: 70%;
+}
+
+#userSubmit{
+	width: 100px;
+}
+
+#motoWrapper{
+	float: left;
+	width: 14%;
+	height: auto;
+	z-index: 10;
+	position: relative;
+	height: 1000px;
+	text-align: center;
+	margin-top: 20em;
+}
+
+#moto{
+        display: block;
+	margin-left: -115%;
+	float: left;
+	margin-top: 1.5em;
+	width: 900px;
+	-ms-transform: rotate(270deg); /* IE 9 */
+        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+        transform: rotate(270deg);
+        color: #77BFF2;
+        font-size: 6em;
+        letter-spacing: 10px;
+}
+
+
+
+.twitterWrapper{
+    display: block;
+	width: 330px;
+	height: 10em;
+	float: right;
+	margin-top: -101em;
+	margin-right: 10px;
+}
+
+.footerWrapper{
+	display: block;
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin: 5em auto 2em auto;
+	background-color: #E83199;
+}
+
+.footerWrapper > p{
+	text-align: center;
+	font-size: 25px;
+}
+
+.footerWrapper > h6{
+	text-align: center;
+}
+
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+
+/*********************************************************************************************/
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+/*********************************************************************************************/
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Oswald";
+}
+
+
+body{
+  background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.headWrapper{
+	text-align: center;
+	height: 280px;
+	width: 99.4%;
+	border-width: 4px;
+	border-style: dashed;
+	border-top-color: #cccccc;
+	border-left-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: transparent;
+}
+
+#pageTitle{
+	text-align: center;
+	color: #E065CA;
+	margin-top: -265px;
+	font-size: 125px;
+	width: 100%;
+}
+
+#backupSocialGroup{
+        display: block;
+	float: right;
+	width: 60px;
+	height: auto;
+	margin: -12em 0.5em 0em 0em;
+}
+
+#backupSocialInstagram{
+	cursor: default;
+}
+
+#backupIconInstagram{
+	display: none;
+	width: 48px;
+	margin-bottom: 0.5em;
+}
+
+#backupIconTwitter{
+	display: none;
+	width: 48px;
+	margin-bottom: 0.5em;
+}
+
+#backupIconFacebook{
+	display: none;
+	width: 48px;
+}
+
+#socialGroup{
+	float: right;
+	width: 300px;
+	height: auto;
+	margin: -5em 1em 0em 0em;
+}
+
+.socialInstagram{
+	width: 48px;
+	width: 48px;
+	padding: 0px;
+	margin: 0em 0.5em 0em 0em;
+}
+
+.socialInstagram:hover{
+	border: 3px dotted #41F0F0;
+	cursor: default;
+}
+
+.nav{
+	overflow: hidden;
+	text-align: center;
+	background-color: #E83199;
+	height: auto;
+	margin-top: -20px;
+}
+
+.nav li{
+	text-align: center;
+	display: inline-block;
+	margin-right: 10%;
+	font-size: 30px;
+	width: auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.nav li:hover{
+	color: #FAFAFA;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	margin-top: 20px;
+}
+
+.contentWrapper{
+	margin-top: 7em;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 8px;
+	border-style: dashed;
+	border-top-color: #E065CA;
+	border-left-color: #E065CA;
+	border-right-color: #A31C8A;
+	border-bottom-color: #A31C8A;
+	height: 1600px;
+	width: 60%;
+	background-color: #FAFAFA;
+	font-family: 'Lobster', cursive;
+	color: #cccccc;
+	z-index: 2;
+}
+
+#contentTitle{
+	color: #474AEA;
+	text-align: center;
+	font-size: 100px;
+	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
+}
+
+.rslides {
+	text-align: center;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 90%;
+	height: 200px;
+	padding: 0;
+	margin: 0 auto;
+	border-radius: 14px;
+	}
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 200px;
+	left: 0;
+	top: 0;
+	}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	height: 200px;
+	border: 0;
+	border-radius: 14px;
+	}
+
+.writingWrapper{
+	margin: 0 auto;
+	width: 85%;
+	height: auto;
+}
+
+.writingWrapper > p{
+	text-align: center;
+	color: #000;
+	font-size: 24px;
+}
+
+.writingWrapper > h6{
+	color: #000;
+	text-align: center;
+}
+
+#subheadingInfo{
+	float: left;
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+#extraInfo{
+	float: left;
+	color: #4B4D49;
+	font-size: 16px;
+}
+
+#extraInfo:hover{
+	color: #E065CA;
+}
+
+#classPicture{
+	float: right;
+	height: 300px;
+	width: 50%;
+	border: 1px solid red;
+	margin-top: -300px;
+	background-image: url("../../../../../sewing.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+form{
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
+}
+
+#userEmail{
+	width: 30%;
+	text-align: center;
+}
+
+#userName{
+	width: 30%;
+	text-align: center;
+}
+
+#userComments{
+	width: 70%;
+}
+
+#userSubmit{
+	width: 100px;
+}
+
+#motoWrapper{
+	float: left;
+	width: 14%;
+	height: auto;
+	z-index: 10;
+	position: relative;
+	height: 1000px;
+	text-align: center;
+	margin-top: 20em;
+}
+
+#moto{
+        display: block;
+	margin-left: -115%;
+	float: left;
+	margin-top: 1.5em;
+	width: 900px;
+	-ms-transform: rotate(270deg); /* IE 9 */
+        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+        transform: rotate(270deg);
+        color: #77BFF2;
+        font-size: 6em;
+        letter-spacing: 10px;
+}
+
+
+
+.twitterWrapper{
+    display: block;
+	width: 330px;
+	height: 10em;
+	float: right;
+	margin-top: -101em;
+	margin-right: 10px;
+}
+
+.footerWrapper{
+	display: block;
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin: 5em auto 2em auto;
+	background-color: #E83199;
+}
+
+.footerWrapper > p{
+	text-align: center;
+	font-size: 25px;
+}
+
+.footerWrapper > h6{
+	text-align: center;
+}
+
+
+
+
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+}
+
+/***********************************************************************************************************/
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+/***********************************************************************************************************/
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Oswald";
+}
+
+
+body{
+  background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.headWrapper{
+	text-align: center;
+	height: 280px;
+	width: 99.4%;
+	border-width: 4px;
+	border-style: dashed;
+	border-top-color: #cccccc;
+	border-left-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: transparent;
+}
+
+#pageTitle{
+	text-align: center;
+	color: #E065CA;
+	margin-top: -265px;
+	font-size: 125px;
+	width: 100%;
+}
+
+#backupSocialGroup{
+        display: block;
+	float: right;
+	width: 60px;
+	height: auto;
+	margin: -12em 0.5em 0em 0em;
+}
+
+#backupSocialInstagram{
+	cursor: default;
+}
+
+#backupIconInstagram{
+	display: none;
+	width: 48px;
+	margin-bottom: 0.5em;
+}
+
+#backupIconTwitter{
+	display: none;
+	width: 48px;
+	margin-bottom: 0.5em;
+}
+
+#backupIconFacebook{
+	display: none;
+	width: 48px;
+}
+
+#socialGroup{
+	float: right;
+	width: 300px;
+	height: auto;
+	margin: -5em 1em 0em 0em;
+}
+
+.socialInstagram{
+	width: 48px;
+	width: 48px;
+	padding: 0px;
+	margin: 0em 0.5em 0em 0em;
+}
+
+.socialInstagram:hover{
+	border: 3px dotted #41F0F0;
+	cursor: default;
+}
+
+.nav{
+	overflow: hidden;
+	text-align: center;
+	background-color: #E83199;
+	height: auto;
+	margin-top: -20px;
+}
+
+.nav li{
+	text-align: center;
+	display: inline-block;
+	margin-right: 10%;
+	font-size: 30px;
+	width: auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.nav li:hover{
+	color: #FAFAFA;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	margin-top: 20px;
+}
+
+.contentWrapper{
+	margin-top: 5.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 8px;
+	border-style: dashed;
+	border-top-color: #E065CA;
+	border-left-color: #E065CA;
+	border-right-color: #A31C8A;
+	border-bottom-color: #A31C8A;
+	height: 1600px;
+	width: 60%;
+	background-color: #FAFAFA;
+	font-family: 'Lobster', cursive;
+	color: #cccccc;
+	z-index: 13;
+	position: relative;
+}
+
+#contentTitle{
+	color: #474AEA;
+	text-align: center;
+	font-size: 80px;
+	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
+}
+
+.rslides {
+	text-align: center;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 90%;
+	height: 200px;
+	padding: 0;
+	margin: 0 auto;
+	border-radius: 14px;
+	}
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 200px;
+	left: 0;
+	top: 0;
+	}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	height: 200px;
+	border: 0;
+	border-radius: 14px;
+	}
+
+.writingWrapper{
+	margin: 0 auto;
+	width: 85%;
+	height: auto;
+}
+
+.writingWrapper > p{
+	text-align: center;
+	color: #000;
+	font-size: 24px;
+}
+
+.writingWrapper > h6{
+	color: #000;
+	text-align: center;
+}
+
+#subheadingInfo{
+	float: left;
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+#extraInfo{
+	float: left;
+	color: #4B4D49;
+	font-size: 16px;
+}
+
+#extraInfo:hover{
+	color: #E065CA;
+}
+
+#classPicture{
+	float: right;
+	height: 300px;
+	width: 50%;
+	border: 1px solid red;
+	margin-top: -300px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#class_picture_again{
+	width: 100%;
+	height: 100%;
+
+}
+
+form{
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
+}
+
+#userEmail{
+	width: 38%;
+	text-align: center;
+}
+
+#userName{
+	width: 38%;
+	text-align: center;
+}
+
+#userComments{
+	width: 70%;
+	resize: none;
+}
+
+#userSubmit{
+	width: 100px;
+}
+
+#motoWrapper{
+	float: left;
+	width: 14%;
+	height: auto;
+	z-index: 10;
+	height: 1000px;
+	text-align: center;
+	margin-top: 20em;
+}
+
+#moto{
+    display: block;
+	margin-left: -115%;
+	float: left;
+	margin-top: 1.5em;
+	width: 900px;
+	-ms-transform: rotate(270deg); /* IE 9 */
+        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+        transform: rotate(270deg);
+        color: #77BFF2;
+        font-size: 6em;
+        letter-spacing: 10px;
+    z-index: 1;
+}
+
+
+
+.twitterWrapper{
+    display: block;
+	width: 330px;
+	height: 10em;
+	float: right;
+	margin-top: -101em;
+	margin-right: 10px;
+}
+
+.footerWrapper{
+	display: block;
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin: 5em auto 2em auto;
+	background-color: #E83199;
+}
+
+.footerWrapper > p{
+	text-align: center;
+	font-size: 25px;
+}
+
+.footerWrapper > h6{
+	text-align: center;
+}
+
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+}
+
+@media screen and (max-width: 1798px) { /*Size ajustment to the Twitter side widget*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+	.twitterWrapper{
+        display: block;
+		width: 270px;
+		margin-right: 10px;
+}
+
+}
+
+@media screen and (max-width: 1488px) { /*Size ajustment to the Twitter side widget again!!!*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+	.twitterWrapper{
+        display: block;
+		width: 220px;
+		margin-right: 0.5em;
+	}
+
+}
+
+@media screen and (max-width: 1444px) { /*Ajustment for placing of moto inbetween twitter widet placements*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+	#moto{
+		height: 5em;
+		font-size: 5em;
+	}
+
+	#motoWrapper{
+	margin-top: 10em;
+}
+
+}
+
+@media screen and (max-width: 1300px) { /*Deletion of the Twitter side Widget and size ajustment to the moto*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+	.twitterWrapper{
+		display: none;
+	}
+
+	.contentWrapper{
+		width: 75%;
+	}
+
+	#moto{
+		height: 5em;
+		font-size: 5em;
+	}
+}
+
+@media screen and (max-width: 1290px) { /*Moto Arrangement Changed For Better Laptop Support*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+	#moto{
+		height: 6.5em;
+		font-size: 4.5em;
+	}
+
+}
+
+@media screen and (max-width: 1251px) { /*Instagram Icon Vertical Arrangement and size ajustment to Horizontal Arrangement*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+	#backupSocialGroup{
+
+	}
+
+	#backupIconInstagram{
+		display: block;
+	}
+
+	#socialGroup{
+		float: right;
+		width: 240px;
+		height: auto;
+		margin: -5em 0.3em 0em 0em;
+	}
+
+	#iconInstagram{
+		display: none;
+	}
+
+	#moto{
+		height: 6.5em;
+		font-size: 4.5em;
+	}
+
+}
+
+@media screen and (max-width: 1131px) { /*Twitter Icon Vertical Arrangement and size ajustment to Horizontal Arrangement*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+	#backupIconTwitter{
+		display: block;
+	}
+
+	#iconTwitter{
+		display: none;
+	}
+
+	#socialGroup{
+		width: 190px;
+		margin-right: -3px;
+	}
+
+	#moto{
+		height: 7.5em;
+		font-size: 4.5em;
+	}
+
+}
+
+@media screen and (max-width: 1033px) { /*Facebook Icon Vertical Arrangement and deletion of Horizontal Arrangement*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+	#backupIconFacebook{
+		display: block;
+	}
+
+	#iconFacebook{
+		display: none;
+	}
+
+	#socialGroup{
+		display: none;
+	}
+
+	.socialInstagram{
+		display: none;
+	}
+
+	#moto{
+		height: 9em;
+		font-size: 4em;
+	}
+
+}
+
+@media screen and (max-width: 940px) { /*Earlier desolation of moto and moto wrapper*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    #moto{
+    	display: none;
+    }
+    
+    #motoWrapper{
+    	display: none;
+    }
+
+}
+
+@media screen and (max-width: 885px) { /*Making height smaller for class Picture*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    #classPicture{
+    	height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 785px) { /*Size ajustment to the content title for laptop support (Overlapping) Again!!!*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    #backupSocialGroup{
+    	display: none;
+    }
+
+}
+
+@media screen and (max-width: 590px) { /*Height adjustment to the content wrapper and final overall positions*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    .contentWrapper{
+    	height: 1800px;
+    	width: 800px;
+    	margin-left: 8.5%;
+    }
+    
+    .nav{
+    	width: 900px;
+    }
+    
+    .footerWrapper{
+	width: 899px;
+	}
+	
+	.headWrapper{
+		width: 899px;
+	}
+	
+	#pageTitle{
+		width: 899px;
+	}
+
+}
