@@ -3,6 +3,8 @@
 $subject = "SewBeads email, Website";
 $text = 'Persons Email: ' .$_POST['user_email'] ."\n"
 	   ."Person's Name: " .$_POST['user_name'] ."\n"
+	   ."Class Name: "    .$_POST['class_name'] ."\n"
+	   ."Class Name: "    .$_POST['class_name'] ."\n"
 	   .'User Comment: ' ."\n"."\n"
 	   .$_POST['user_comments'];
 $to = "sewbeads45@gmail.com";

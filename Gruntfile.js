@@ -25,14 +25,6 @@ module.exports = function(grunt) {
     }
   },
 
-  sass: {
-    dist: {
-      files: {
-        'css/index.css': 'css/sass/index.sass'
-      }
-    }
-  },
-
   cssmin: {
     target: {
       files: [{
@@ -72,7 +64,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'watch']);
+  grunt.registerTask('default', ['autoprefixer', 'cssmin', 'watch']);
   grunt.registerTask('convertsass', ['sass']);
   grunt.registerTask('minifycss', ['cssmin']);
   grunt.registerTask('autoprefix', ['autoprefixer']);
