@@ -30,574 +30,9 @@ img, object, embed, video {
     padding:0;
 }
 
-/*******************************************************************************************/
-/* Mobile Layout: 480px and below. */
-/*******************************************************************************************/
-
-.gridContainer {
-	margin-left: auto;
-	margin-right: auto;
-	width: 86.45%;
-	padding-left: 2.275%;
-	padding-right: 2.275%;
-	clear: none;
-	float: none;
-}
-
-*{
-	padding: 0;
-	margin: 0;
-	font-family: "Oswald";
-}
-
-
-body{
-  background-image: url("../swirl_pattern/swirl_pattern.png");
-}
-
-a{
-	text-decoration: none;
-	color: inherit;
-}
-
-.headWrapper{
-	text-align: center;
-	height: 280px;
-	width: 99.4%;
-	border-width: 4px;
-	border-style: dashed;
-	border-top-color: #cccccc;
-	border-left-color: #cccccc;
-	border-right-color: #cccccc;
-	border-bottom-color: transparent;
-}
-
-#pageTitle{
-	text-align: center;
-	color: #E065CA;
-	margin-top: -265px;
-	font-size: 125px;
-	width: 100%;
-}
-
-#backupSocialGroup{
-        display: block;
-	float: right;
-	width: 60px;
-	height: auto;
-	margin: -12em 0.5em 0em 0em;
-}
-
-#backupSocialInstagram{
-	cursor: default;
-}
-
-#backupIconInstagram{
-	display: none;
-	width: 48px;
-	margin-bottom: 0.5em;
-}
-
-#backupIconTwitter{
-	display: none;
-	width: 48px;
-	margin-bottom: 0.5em;
-}
-
-#backupIconFacebook{
-	display: none;
-	width: 48px;
-}
-
-#socialGroup{
-	float: right;
-	width: 300px;
-	height: auto;
-	margin: -5em 1em 0em 0em;
-}
-
-.socialInstagram{
-	width: 48px;
-	width: 48px;
-	padding: 0px;
-	margin: 0em 0.5em 0em 0em;
-}
-
-.socialInstagram:hover{
-	border: 3px dotted #41F0F0;
-	cursor: default;
-}
-
-.nav{
-	overflow: hidden;
-	text-align: center;
-	background-color: #E83199;
-	height: auto;
-	margin-top: -20px;
-}
-
-.nav li{
-	text-align: center;
-	display: inline-block;
-	margin-right: 10%;
-	font-size: 30px;
-	width: auto;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.nav li:hover{
-	color: #FAFAFA;
-}
-
-.fixed{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 20;
-	margin-top: 20px;
-}
-
-.contentWrapper{
-	margin-top: 7em;
-	margin-left: auto;
-	margin-right: auto;
-	border-width: 8px;
-	border-style: dashed;
-	border-top-color: #E065CA;
-	border-left-color: #E065CA;
-	border-right-color: #A31C8A;
-	border-bottom-color: #A31C8A;
-	height: 1200px;
-	width: 60%;
-	background-color: #FAFAFA;
-	font-family: 'Lobster', cursive;
-	color: #cccccc;
-	z-index: 11;
-	position: relative;
-}
-
-#contentTitle{
-	color: #474AEA;
-	text-align: center;
-	font-size: 100px;
-	font-family: "Lobster";
-}
-
-.rslides {
-	text-align: center;
-	position: relative;
-	list-style: none;
-	overflow: hidden;
-	width: 90%;
-	height: 200px;
-	padding: 0;
-	margin: 0 auto;
-	border-radius: 14px;
-	}
-
-.rslides li {
-	-webkit-backface-visibility: hidden;
-	position: absolute;
-	display: none;
-	width: 100%;
-	height: 200px;
-	left: 0;
-	top: 0;
-	}
-
-.rslides li:first-child {
-	position: relative;
-	display: block;
-	}
-
-.rslides img {
-	display: block;
-	height: auto;
-	float: left;
-	width: 100%;
-	height: 200px;
-	border: 0;
-	border-radius: 14px;
-	}
-
-.writingWrapper{
-	margin: 0 auto;
-	width: 85%;
-	height: auto;
-}
-
-.writingWrapper > p{
-	text-align: center;
-	color: #000;
-	font-size: 24px;
-}
-
-.writingWrapper > h6{
-	color: #000;
-	text-align: center;
-}
-
-.writingWrapper ul{
-	color: #000;
-}
-
-.writingWrapper ul li a{
-	color: red;
-}
-
-#motoWrapper{
-	float: left;
-	width: 14%;
-	height: auto;
-	z-index: 10;
-	height: 1000px;
-	text-align: center;
-	margin-top: 20em;
-}
-
-#moto{
-        display: block;
-	margin-left: -115%;
-	float: left;
-	margin-top: 1.5em;
-	width: 900px;
-	-ms-transform: rotate(270deg); /* IE 9 */
-        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-        transform: rotate(270deg);
-        color: #77BFF2;
-        font-size: 6em;
-        letter-spacing: 10px;
-}
-
-
-
-.twitterWrapper{
-    display: block;
-	width: 330px;
-	height: 10em;
-	float: right;
-	margin-top: -76em;
-	margin-right: 10px;
-}
-
-.footerWrapper{
-	clear: both;
-	width: 100%;
-	height: auto;
-	margin: 5em auto 2em auto;
-	background-color: #E83199;
-}
-
-.footerWrapper > p{
-	text-align: center;
-	font-size: 25px;
-}
-
-.footerWrapper > h6{
-	text-align: center;
-}
-
-.zeroMargin_mobile {
-    margin-left: 0;
-}
-.hide_mobile {
-    display: none;
-}
-
-/*********************************************************************************************/
-/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
-/*********************************************************************************************/
-
-@media only screen and (min-width: 481px) {
-
-.gridContainer {
-	width: 90.675%;
-	padding-left: 1.1625%;
-	padding-right: 1.1625%;
-	clear: none;
-	float: none;
-	margin-left: auto;
-}
-
-*{
-	padding: 0;
-	margin: 0;
-	font-family: "Oswald";
-}
-
-
-body{
-  background-image: url("../swirl_pattern/swirl_pattern.png");
-}
-
-a{
-	text-decoration: none;
-	color: inherit;
-}
-
-.headWrapper{
-	text-align: center;
-	height: 280px;
-	width: 99.4%;
-	border-width: 4px;
-	border-style: dashed;
-	border-top-color: #cccccc;
-	border-left-color: #cccccc;
-	border-right-color: #cccccc;
-	border-bottom-color: transparent;
-}
-
-#pageTitle{
-	text-align: center;
-	color: #E065CA;
-	margin-top: -265px;
-	font-size: 125px;
-	width: 100%;
-}
-
-#backupSocialGroup{
-        display: block;
-	float: right;
-	width: 60px;
-	height: auto;
-	margin: -12em 0.5em 0em 0em;
-}
-
-#backupSocialInstagram{
-	cursor: default;
-}
-
-#backupIconInstagram{
-	display: none;
-	width: 48px;
-	margin-bottom: 0.5em;
-}
-
-#backupIconTwitter{
-	display: none;
-	width: 48px;
-	margin-bottom: 0.5em;
-}
-
-#backupIconFacebook{
-	display: none;
-	width: 48px;
-}
-
-#socialGroup{
-	float: right;
-	width: 300px;
-	height: auto;
-	margin: -5em 1em 0em 0em;
-}
-
-.socialInstagram{
-	width: 48px;
-	width: 48px;
-	padding: 0px;
-	margin: 0em 0.5em 0em 0em;
-}
-
-.socialInstagram:hover{
-	border: 3px dotted #41F0F0;
-	cursor: default;
-}
-
-.nav{
-	overflow: hidden;
-	text-align: center;
-	background-color: #E83199;
-	height: auto;
-	margin-top: -20px;
-}
-
-.nav li{
-	text-align: center;
-	display: inline-block;
-	margin-right: 10%;
-	font-size: 30px;
-	width: auto;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.nav li:hover{
-	color: #FAFAFA;
-}
-
-.fixed{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 20;
-	margin-top: 20px;
-}
-
-.contentWrapper{
-	margin-top: 7em;
-	margin-left: auto;
-	margin-right: auto;
-	border-width: 8px;
-	border-style: dashed;
-	border-top-color: #E065CA;
-	border-left-color: #E065CA;
-	border-right-color: #A31C8A;
-	border-bottom-color: #A31C8A;
-	height: 1200px;
-	width: 60%;
-	background-color: #FAFAFA;
-	font-family: 'Lobster', cursive;
-	color: #cccccc;
-	z-index: 11;
-	position: relative;
-}
-
-#contentTitle{
-	color: #474AEA;
-	text-align: center;
-	font-size: 100px;
-	font-family: "Lobster";
-}
-
-.rslides {
-	text-align: center;
-	position: relative;
-	list-style: none;
-	overflow: hidden;
-	width: 90%;
-	height: 200px;
-	padding: 0;
-	margin: 0 auto;
-	border-radius: 14px;
-	}
-
-.rslides li {
-	-webkit-backface-visibility: hidden;
-	position: absolute;
-	display: none;
-	width: 100%;
-	height: 200px;
-	left: 0;
-	top: 0;
-	}
-
-.rslides li:first-child {
-	position: relative;
-	display: block;
-	}
-
-.rslides img {
-	display: block;
-	height: auto;
-	float: left;
-	width: 100%;
-	height: 200px;
-	border: 0;
-	border-radius: 14px;
-	}
-
-.writingWrapper{
-	margin: 0 auto;
-	width: 85%;
-	height: auto;
-}
-
-.writingWrapper > p{
-	text-align: center;
-	color: #000;
-	font-size: 24px;
-}
-
-.writingWrapper > h6{
-	color: #000;
-	text-align: center;
-}
-
-.writingWrapper ul{
-	color: #000;
-}
-
-.writingWrapper ul li a{
-	color: red;
-}
-
-#motoWrapper{
-	float: left;
-	width: 14%;
-	height: auto;
-	z-index: 10;
-	height: 1000px;
-	text-align: center;
-	margin-top: 20em;
-}
-
-#moto{
-        display: block;
-	margin-left: -115%;
-	float: left;
-	margin-top: 1.5em;
-	width: 900px;
-	-ms-transform: rotate(270deg); /* IE 9 */
-        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-        transform: rotate(270deg);
-        color: #77BFF2;
-        font-size: 6em;
-        letter-spacing: 10px;
-}
-
-
-
-.twitterWrapper{
-    display: block;
-	width: 330px;
-	height: 10em;
-	float: right;
-	margin-top: -76em;
-	margin-right: 10px;
-}
-
-.footerWrapper{
-	clear: both;
-	width: 100%;
-	height: auto;
-	margin: 5em auto 2em auto;
-	background-color: #E83199;
-}
-
-.footerWrapper > p{
-	text-align: center;
-	font-size: 25px;
-}
-
-.footerWrapper > h6{
-	text-align: center;
-}
-
-
-
-.zeroMargin_tablet {
-    margin-left: 0;
-}
-.hide_tablet {
-    display: none;
-}
-}
-
 /***********************************************************************************************************/
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 /***********************************************************************************************************/
-
-@media only screen and (min-width: 769px) {
-
-.gridContainer {
-	width: 88.5%;
-	max-width: 1232px;
-	padding-left: 0.75%;
-	padding-right: 0.75%;
-	margin: auto;
-	clear: none;
-	float: none;
-	margin-left: auto;
-}
 
 *{
 	padding: 0;
@@ -716,15 +151,15 @@ a{
 	margin-top: 5.5em;
 	margin-left: auto;
 	margin-right: auto;
-	border-width: 8px;
+	border-width: 5px;
 	border-style: dashed;
-	border-top-color: #E065CA;
-	border-left-color: #E065CA;
+	border-top-color: #1497A8;
+	border-left-color: #1497A8;
 	border-right-color: #A31C8A;
 	border-bottom-color: #A31C8A;
-	height: 1200px;
+	height: 1400px;
 	width: 60%;
-	background-color: #FAFAFA;
+	background: url(http://subtlepatterns.com/patterns/scribble_light.png);
 	font-family: 'Lobster', cursive;
 	color: #cccccc;
 	z-index: 11;
@@ -777,15 +212,9 @@ a{
 
 .writingWrapper{
 	margin: 0 auto;
-	width: 85%;
-	height: auto;
-}
-
-.writingWrapper > p{
-	text-align: center;
-	color: #000;
-	font-size: 24px;
-	font-family: 'Ropa Sans', sans-serif;
+	width: 88%;
+	height: 30%;
+	margin-top: 60px;
 }
 
 .writingWrapper > h6{
@@ -794,12 +223,95 @@ a{
 	font-family: 'Ropa Sans', sans-serif;
 }
 
-.writingWrapper ul{
-	color: #000;
+.items_section{
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 
-.writingWrapper ul li a{
-	color: red;
+#columns{
+	width: 30%;
+	height: 78%;
+	background-color: #ffffff;
+    box-shadow: 0 10px 6px -6px #777;
+    /*box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;*/
+    text-align: center;
+    position: relative;
+    display: block;
+    transition: opacity 2s ease-in-out;
+}
+
+#columns:hover .item_picture{
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+
+/*#columns:before, #columns:after{
+	box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+#columns:after{
+	transform:skew(8deg) rotate(3deg);
+}*/
+
+.columns_alpha{
+	float: left;
+}
+
+.columns_beta{
+	float: left;
+	margin-left: 5%;
+}
+
+.columns_omega{
+	float: right;
+}
+
+.item_picture{
+	width: 100%;
+	height: 65%;
+	border: none;
+}
+
+.separator{
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #8C5ED6;
+}
+
+#columns > h3{
+	color: salmon;
+	padding-top: 10px;
+}
+
+#columns > h4{
+	color: #6DCFCA;
+}
+
+.banner{
+  background:salmon;
+  color:#FFF;
+  width:70%;
+  position:absolute;
+  left: 37%;
+  height:30px;
+}
+
+.banner:before{
+  content: "";
+  position: absolute;
+  float: right;
+  top:100%;
+  margin-left: 33%;
+  border-top: 0px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 2em solid #ff511d;
+  z-index:-1;
+}
+
+.banner > h1{
+	font-size: 18px;
 }
 
 #motoWrapper{
@@ -833,7 +345,7 @@ a{
 	width: 330px;
 	height: 10em;
 	float: right;
-	margin-top: -76em;
+	margin-top: -88em;
 	margin-right: 10px;
 }
 
@@ -859,7 +371,6 @@ a{
 }
 .hide_desktop {
     display: none;
-}
 }
 
 @media screen and (max-width: 1798px) { /*Size ajustment to the Twitter side widget*/
@@ -899,6 +410,10 @@ a{
 		width: 220px;
 		margin-right: 0.5em;
 	}
+
+	.banner:before{
+  		margin-left: 30%;
+}
 
 }
 
@@ -949,6 +464,9 @@ a{
 		height: 5em;
 		font-size: 5em;
 	}
+	.banner:before{
+  		margin-left: 32%;
+}
 }
 
 @media screen and (max-width: 1290px) { /*Moto Arrangement Changed For Better Laptop Support*/
@@ -1071,6 +589,9 @@ a{
 	#moto{
 		height: 9em;
 		font-size: 4em;
+	}
+	.banner:before{
+  		margin-left: 29%;
 	}
 
 }

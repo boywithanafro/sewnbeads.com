@@ -113,7 +113,7 @@ img, object, embed, video {
     border-left-color: #E065CA;
     border-right-color: #A31C8A;
     border-bottom-color: #A31C8A;
-    height: 1900px;
+    height: 2400px;
     width: 60%;
     background-color: #FAFAFA;
     font-family: "Lobster", cursive;
@@ -178,22 +178,16 @@ img, object, embed, video {
   }
 
   #featImg1 {
-    height: 400px;
-    width: 90%;
-    margin: 0 auto;
+    height: 1000px;
+    width: 100%;
     border: 1px solid red;
-    background-image: url("../pic1.jpg");
-    background-repeat: none;
-    background-size: cover; }
+  }
 
   #featImg2 {
     height: 400px;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     border: 1px solid red;
-    background-image: url("../pic2final.jpg");
-    background-repeat: none;
-    background-size: cover; }
+  }
 
   #featImgCaption {
     color: #999095;
@@ -227,9 +221,9 @@ img, object, embed, video {
 
   .twitterWrapper {
     width: 330px;
-    height: 10em;
+    height: 11em;
     float: right;
-    margin-top: -119.5em;
+    margin-top: -151em;
     margin-right: 10px; }
 
   .footerWrapper {
@@ -294,6 +288,21 @@ img, object, embed, video {
 
   #motoWrapper {
     margin-top: 10em; } }
+@media screen and (max-width: 1310px) {
+  /*Deletion of the Twitter side Widget and size ajustment to the moto */
+  .gridContainer {
+    width: 88.5%;
+    padding-left: 0.75%;
+    padding-right: 0.75%;
+    margin: auto;
+    clear: none;
+    float: none;
+    margin-left: auto; }
+
+  #featImg1{
+    height: 900px;
+  }}
+
 @media screen and (max-width: 1300px) {
   /*Deletion of the Twitter side Widget and size ajustment to the moto */
   .gridContainer {
@@ -309,12 +318,13 @@ img, object, embed, video {
     display: none; }
 
   .contentWrapper {
-    height: 1900px;
+    height: 2200px;
     width: 75%; }
 
   #moto {
     height: 5em;
     font-size: 5em; } }
+
 @media screen and (max-width: 1290px) {
   /*Moto Arrangement Changed For Better Laptop Support */
   .gridContainer {
@@ -412,7 +422,11 @@ img, object, embed, video {
 
   #moto {
     height: 10.2em;
-    font-size: 4em; } }
+    font-size: 4em; 
+    } 
+  #featImg1{
+    height: 700px;
+  }}
 @media screen and (max-width: 785px) {
   /*Size ajustment to the content title for laptop support (Overlapping) Again!!! */
   .gridContainer {
@@ -425,7 +439,10 @@ img, object, embed, video {
     margin-left: auto; }
 
   #backupSocialGroup, #moto {
-    display: none; } }
+    display: none; } 
+  #featImg1{
+    height: 600px;
+  }}
 @media screen and (max-width: 590px) {
   /*Height adjustment to the content wrapper and final overall positions */
   .gridContainer {
@@ -438,7 +455,7 @@ img, object, embed, video {
     margin-left: auto; }
 
   .contentWrapper {
-    height: 1800px;
+    height: 2200px;
     width: 800px;
     margin-left: 8.5%; }
 

@@ -733,7 +733,7 @@ a{
 }
 
 #backupSocialGroup{
-        display: block;
+    display: block;
 	float: right;
 	width: 60px;
 	height: auto;
@@ -932,11 +932,6 @@ form{
 }
 
 #userName{
-	width: 38%;
-	text-align: center;
-}
-
-#class_name{
 	width: 38%;
 	text-align: center;
 }
