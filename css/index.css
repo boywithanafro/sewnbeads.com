@@ -177,6 +177,25 @@ img, object, embed, video {
     font-size: 25px;
   }
 
+  #fashion_discount{
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #652161;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    position: relative;
+    z-index: 20;
+  }
+
+  #fashion_discount:hover{
+    background-color: #216525;
+  }
+
   #featImg1 {
     height: 1000px;
     width: 100%;
@@ -199,7 +218,6 @@ img, object, embed, video {
     width: 14%;
     height: auto;
     z-index: 10;
-    position: relative;
     height: 1000px;
     text-align: center;
     margin-top: 20em; }
