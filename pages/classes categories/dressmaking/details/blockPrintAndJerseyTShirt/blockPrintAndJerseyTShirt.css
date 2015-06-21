@@ -52,7 +52,7 @@ img, object, embed, video {
 
 
 body{
-  background-image: url("../../../swirl_pattern/swirl_pattern.png");
+  background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
 }
 
 a{
@@ -81,7 +81,7 @@ a{
 }
 
 #backupSocialGroup{
-    display: block;
+        display: block;
 	float: right;
 	width: 60px;
 	height: auto;
@@ -131,7 +131,6 @@ a{
 .nav{
 	overflow: hidden;
 	text-align: center;
-	margin-top: -50px;
 	background-color: #E83199;
 	height: auto;
 	margin-top: -20px;
@@ -150,6 +149,13 @@ a{
 	color: #FAFAFA;
 }
 
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	margin-top: 20px;
+}
 
 .contentWrapper{
 	margin-top: 7em;
@@ -172,8 +178,9 @@ a{
 #contentTitle{
 	color: #474AEA;
 	text-align: center;
-	font-size: 100px;
+	font-size: 85px;
 	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
 }
 
 .rslides {
@@ -222,7 +229,7 @@ a{
 .writingWrapper > p{
 	text-align: center;
 	color: #000;
-	font-size: 30px;
+	font-size: 24px;
 }
 
 .writingWrapper > h6{
@@ -230,77 +237,58 @@ a{
 	text-align: center;
 }
 
-table{
-    width: 90%;
-    margin: 0 auto;
-}
-
-table *{
-    color: #000;
-    padding: 0px;
-    margin: 0px;
-}
-
-td{
-    width: 33.3%;
-    text-align: center;
-}
-
-td h3{
+#subheadingInfo{
+	float: left;
 	text-decoration: underline;
+	font-size: 20px;
 }
 
-td p{
-	font-weight: normal;
+#extraInfo{
+	float: left;
+	color: #4B4D49;
+	font-size: 16px;
 }
 
-td img{
-	margin: auto 0;
-	height: 140px;
-	width: 100%;
-}
-
-tr{
-	height: 180px;
-	border-radius: 7px;
-}
-
-table tr td h3:hover{
+#extraInfo:hover{
 	color: #E065CA;
 }
 
-.rowTypeOne{
-	background-color: #E8DE9E;
+#classPicture{
+	float: right;
+	height: 300px;
+	width: 50%;
+	border: 1px solid red;
+	margin-top: -300px;
+	background-image: url("../../../../../sewing.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.rowTypeTwo{
-	background-color: #D5E0F7;
-}
-
-.secondData{
-	width: 46.3%;
-}
-
-.thirdData{
-	width: 20.3%;
-}
-
-
-.moreInfoButton{
-	border-radius: 14px;
-	width: 100%;
-	height: 50px;
-	background-color: #2382C4;
-}
-
-.moreInfoButton:hover{
-	background-color: #49C46A;
-}
-
-.moreInfoButton p{
+form{
 	text-align: center;
-	color: #FFF;
-	padding: 5% 0;
+	margin: 0 auto;
+	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
+}
+
+#userEmail{
+	width: 30%;
+	text-align: center;
+}
+
+#userName{
+	width: 30%;
+	text-align: center;
+}
+
+#userComments{
+	width: 70%;
+}
+
+#userSubmit{
+	width: 100px;
 }
 
 #motoWrapper{
@@ -340,6 +328,7 @@ table tr td h3:hover{
 }
 
 .footerWrapper{
+	display: block;
 	clear: both;
 	width: 100%;
 	height: auto;
@@ -378,7 +367,7 @@ table tr td h3:hover{
 	margin-left: auto;
 }
 
-**{
+*{
 	padding: 0;
 	margin: 0;
 	font-family: "Oswald";
@@ -386,7 +375,7 @@ table tr td h3:hover{
 
 
 body{
-  background-image: url("../../../swirl_pattern/swirl_pattern.png");
+  background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
 }
 
 a{
@@ -415,7 +404,7 @@ a{
 }
 
 #backupSocialGroup{
-    display: block;
+        display: block;
 	float: right;
 	width: 60px;
 	height: auto;
@@ -465,7 +454,6 @@ a{
 .nav{
 	overflow: hidden;
 	text-align: center;
-	margin-top: -50px;
 	background-color: #E83199;
 	height: auto;
 	margin-top: -20px;
@@ -484,6 +472,13 @@ a{
 	color: #FAFAFA;
 }
 
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	margin-top: 20px;
+}
 
 .contentWrapper{
 	margin-top: 7em;
@@ -506,8 +501,9 @@ a{
 #contentTitle{
 	color: #474AEA;
 	text-align: center;
-	font-size: 100px;
+	font-size: 85px;
 	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
 }
 
 .rslides {
@@ -556,7 +552,7 @@ a{
 .writingWrapper > p{
 	text-align: center;
 	color: #000;
-	font-size: 30px;
+	font-size: 24px;
 }
 
 .writingWrapper > h6{
@@ -564,77 +560,58 @@ a{
 	text-align: center;
 }
 
-table{
-    width: 90%;
-    margin: 0 auto;
-}
-
-table *{
-    color: #000;
-    padding: 0px;
-    margin: 0px;
-}
-
-td{
-    width: 33.3%;
-    text-align: center;
-}
-
-td h3{
+#subheadingInfo{
+	float: left;
 	text-decoration: underline;
+	font-size: 20px;
 }
 
-td p{
-	font-weight: normal;
+#extraInfo{
+	float: left;
+	color: #4B4D49;
+	font-size: 16px;
 }
 
-td img{
-	margin: auto 0;
-	height: 140px;
-	width: 100%;
-}
-
-tr{
-	height: 180px;
-	border-radius: 7px;
-}
-
-table tr td h3:hover{
+#extraInfo:hover{
 	color: #E065CA;
 }
 
-.rowTypeOne{
-	background-color: #E8DE9E;
+#classPicture{
+	float: right;
+	height: 300px;
+	width: 50%;
+	border: 1px solid red;
+	margin-top: -300px;
+	background-image: url("../../../../../sewing.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.rowTypeTwo{
-	background-color: #D5E0F7;
-}
-
-.secondData{
-	width: 46.3%;
-}
-
-.thirdData{
-	width: 20.3%;
-}
-
-
-.moreInfoButton{
-	border-radius: 14px;
-	width: 100%;
-	height: 50px;
-	background-color: #2382C4;
-}
-
-.moreInfoButton:hover{
-	background-color: #49C46A;
-}
-
-.moreInfoButton p{
+form{
 	text-align: center;
-	color: #FFF;
-	padding: 5% 0;
+	margin: 0 auto;
+	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
+}
+
+#userEmail{
+	width: 30%;
+	text-align: center;
+}
+
+#userName{
+	width: 30%;
+	text-align: center;
+}
+
+#userComments{
+	width: 70%;
+}
+
+#userSubmit{
+	width: 100px;
 }
 
 #motoWrapper{
@@ -674,6 +651,7 @@ table tr td h3:hover{
 }
 
 .footerWrapper{
+	display: block;
 	clear: both;
 	width: 100%;
 	height: auto;
@@ -689,6 +667,8 @@ table tr td h3:hover{
 .footerWrapper > h6{
 	text-align: center;
 }
+
+
 
 
 .zeroMargin_tablet {
@@ -724,7 +704,7 @@ table tr td h3:hover{
 
 
 body{
-  background-image: url("../../../swirl_pattern/swirl_pattern.png");
+  background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
 }
 
 a{
@@ -753,7 +733,7 @@ a{
 }
 
 #backupSocialGroup{
-    display: block;
+        display: block;
 	float: right;
 	width: 60px;
 	height: auto;
@@ -803,7 +783,6 @@ a{
 .nav{
 	overflow: hidden;
 	text-align: center;
-	margin-top: -50px;
 	background-color: #E83199;
 	height: auto;
 	margin-top: -20px;
@@ -822,6 +801,13 @@ a{
 	color: #FAFAFA;
 }
 
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	margin-top: 20px;
+}
 
 .contentWrapper{
 	margin-top: 5.5em;
@@ -833,12 +819,13 @@ a{
 	border-left-color: #E065CA;
 	border-right-color: #A31C8A;
 	border-bottom-color: #A31C8A;
-	height: 2000px;
+	height: 1600px;
 	width: 60%;
 	background-color: #FAFAFA;
 	font-family: 'Lobster', cursive;
 	color: #cccccc;
-	z-index: 2;
+	z-index: 13;
+	position: relative;
 }
 
 #contentTitle{
@@ -895,87 +882,77 @@ a{
 .writingWrapper > p{
 	text-align: center;
 	color: #000;
-	font-size: 30px;
+	font-size: 24px;
 	font-family: 'Ropa Sans', sans-serif;
 }
 
 .writingWrapper > h6{
 	color: #000;
 	text-align: center;
-	font-family: 'Ropa Sans', sans-serif;
 }
 
-table{
-    width: 90%;
-    margin: 0 auto;
-}
-
-table *{
-    color: #000;
-    padding: 0px;
-    margin: 0px;
-}
-
-td{
-    width: 33.3%;
-    text-align: center;
-}
-
-td h3{
+#subheadingInfo{
+	float: left;
 	text-decoration: underline;
+	font-size: 20px;
 }
 
-td p{
-	font-weight: normal;
+#extraInfo{
+	float: left;
+	color: #4B4D49;
+	font-size: 16px;
 }
 
-td img{
-	margin: auto 0;
-	height: 140px;
-	width: 100%;
-}
-
-tr{
-	height: 180px;
-	border-radius: 7px;
-}
-
-table tr td h3:hover{
+#extraInfo:hover{
 	color: #E065CA;
 }
 
-.rowTypeOne{
-	background-color: #E8DE9E;
+#classPicture{
+	float: right;
+	height: 300px;
+	width: 50%;
+	border: 1px solid red;
+	margin-top: -300px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.rowTypeTwo{
-	background-color: #D5E0F7;
-}
-
-.secondData{
-	width: 46.3%;
-}
-
-.thirdData{
-	width: 20.3%;
-}
-
-
-.moreInfoButton{
-	border-radius: 14px;
+#class_picture_again{
 	width: 100%;
-	height: 50px;
-	background-color: #2382C4;
+	height: 100%;
 }
 
-.moreInfoButton:hover{
-	background-color: #49C46A;
-}
-
-.moreInfoButton p{
+form{
 	text-align: center;
-	color: #FFF;
-	padding: 5% 0;
+	margin: 0 auto;
+	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
+}
+
+#userEmail{
+	width: 38%;
+	text-align: center;
+}
+
+#userName{
+	width: 38%;
+	text-align: center;
+}
+
+#class_name{
+	width: 38%;
+	text-align: center;
+}
+
+#userComments{
+	width: 70%;
+	resize: none;
+}
+
+#userSubmit{
+	width: 100px;
 }
 
 #motoWrapper{
@@ -983,14 +960,13 @@ table tr td h3:hover{
 	width: 14%;
 	height: auto;
 	z-index: 10;
-	position: relative;
 	height: 1000px;
 	text-align: center;
 	margin-top: 20em;
 }
 
 #moto{
-        display: block;
+    display: block;
 	margin-left: -115%;
 	float: left;
 	margin-top: 1.5em;
@@ -1001,6 +977,7 @@ table tr td h3:hover{
         color: #77BFF2;
         font-size: 6em;
         letter-spacing: 10px;
+    z-index: 1;
 }
 
 
@@ -1010,11 +987,12 @@ table tr td h3:hover{
 	width: 330px;
 	height: 10em;
 	float: right;
-	margin-top: -113.5em;
+	margin-top: -101em;
 	margin-right: 10px;
 }
 
 .footerWrapper{
+	display: block;
 	clear: both;
 	width: 100%;
 	height: auto;
@@ -1252,7 +1230,7 @@ table tr td h3:hover{
 
 }
 
-@media screen and (max-width: 977px) { /*Size ajustment to the content Wrapper + page content title for laptop support (Overlapping)*/
+@media screen and (max-width: 995px) { /*Size ajustment to the content title for laptop support (Overlapping) Again!!!*/
 
 	.gridContainer {
 		width: 88.5%;
@@ -1263,14 +1241,15 @@ table tr td h3:hover{
 		float: none;
 		margin-left: auto;
 	}
-        
-        #contentTitle{
-            font-size: 80px;
-        }
+
+    #backupSocialGroup{
+    	display: none;
+    }
 
 }
 
-@media screen and (max-width: 929px) { /*Last Moto Re-arrangment*/
+
+@media screen and (max-width: 940px) { /*Earlier desolation of moto and moto wrapper*/
 
 	.gridContainer {
 		width: 88.5%;
@@ -1281,11 +1260,36 @@ table tr td h3:hover{
 		float: none;
 		margin-left: auto;
 	}
-        
-	#moto{
-		height: 11em;
-		font-size: 3.5em;
+
+    #moto{
+    	display: none;
+    }
+    
+    #motoWrapper{
+    	display: none;
+    }
+
+}
+
+@media screen and (max-width: 885px) { /*Making height smaller for class Picture and adjusting font size of the content title*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
 	}
+
+    #classPicture{
+    	height: 200px;
+    }
+    
+    #contentTitle{
+    	font-size: 55px;
+    }
 
 }
 
@@ -1301,16 +1305,44 @@ table tr td h3:hover{
 		margin-left: auto;
 	}
 
-    #contentTitle{
-        font-size: 60px;
-    }
-
     #backupSocialGroup{
     	display: none;
     }
 
-    #moto{
-    	display: none;
+}
+
+@media screen and (max-width: 645px) { /*Height adjustment to the content wrapper, final*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    .contentWrapper{
+    	height: 1800px;
+    	width: 800px;
+    	margin-left: 8.5%;
     }
+    
+    .nav{
+    	width: 900px;
+    }
+    
+    .footerWrapper{
+	width: 899px;
+	}
+	
+	.headWrapper{
+		width: 899px;
+	}
+	
+	#pageTitle{
+		width: 899px;
+	}
 
 }
