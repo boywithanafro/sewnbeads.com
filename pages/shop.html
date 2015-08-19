@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:700italic' rel='stylesheet' type='text/css'>
 	<link href="../css/shop.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../js/sidebar.js"></script>
 	<link rel="shortcut icon" type="image/png" href="../favicon.png"/>
 	<title>Sew'n'Beads | Shop</title>
 	<meta name="description" content="Purchase sewing necessities or luxuries here from Sew'n'Beads. We provide cheap fabrics materials." />
@@ -53,7 +56,7 @@
 		<div class="nothing_here">
 		<nav>
 			<ul class="nav">
-				<li><a href="../index.html">Home</a></li>
+				<li><a href="http://www.sewnbeads.com">Home</a></li>
 				<li><a href="classes.html">Classes</a></li>
 				<li><a href="#">Shop</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
@@ -66,37 +69,82 @@
 
 	<div id="mainContent">
 
-		<div id="motoWrapper">
-			<h2 id="moto">Keep On Sewing ...</h2>
-		</div>
-
 		<div class="contentWrapper">
 
-			<h1 id="contentTitle">Shop</h1>
-
+			<h1 id="contentTitle"><span class="edge-dash">-</span>--------<img src="../shopping.svg" alt="" class="svg_shopping_icon" /> Shop <img src="../shopping.svg" alt="" class="svg_shopping_icon" />--------<span class="edge-dash">-</span></h1>
+			<h2 class="left_feature_text">Welcome to our Shop!</h2>
+			<h2 class="right_feature_text">Welcome to our Shop!</h2>
+			<br>
+			<div class="textAnnouncer">
+				<p>More items will be added to the Shop, Please be patient.</p>
+			</div>
+			<br>
 			<ul class="rslides">
 				<li><img src="../slideshowImages/jelly_roll.jpg" alt="shop"></li>
 				<li><img src="../slideshowImages/purple_fabric.jpg" alt="shop"></li>
 				<li><img src="../slideshowImages/thread_single.jpg" alt="shop"></li>
 			</ul>
 
-			<div class="writingWrapper">
-                <section class="items_section">
-                	<div id="columns" class="columns_alpha"><img src="item_images/linen_cream.jpg" alt="" class="item_picture"><div class="separator"></div><h3>Linen Look Cotton - Cream</h3><h4>&pound;5.50</h4><a href="#"><div class="banner"><h1>Read More</h1></div></div></a>
-                	<div id="columns" class="columns_beta"><img src="item_images/linen_salmon.jpg" alt="" class="item_picture"><div class="separator"></div><h3>Linen Look Cotton - Salmon</h3><h4>&pound;5.50</h4><a href="#"><div class="banner"><h1>Read More</h1></div></div></a>
-					<div id="columns" class="columns_omega"><img src="item_images/cotton_threads.jpg" alt="" class="item_picture"><div class="separator"></div><h3>Cotton Thread - Bundle</h3><h4>&pound;4.50</h4><a href="#"><div class="banner"><h1>Read More</h1></div></div></a>               
-                </section>
-                <br><br><h6>Shop not yet finished please be patient...</h6>
+			<div class="separator2"></div>
+
+			<p class="hamburger_categories" title="Please click here for more options"><u>Categories:</u></p>
+			<div class="separator4"></div>
+			<div class="sidebar">
+				<nav class="sidebar_nav">
+					<ul class="sidebar_ul">
+						<a href="#"><li class="sidebar_li" id="important"><u>What's New!</u></li></a>
+
+						<li class="sidebar_li" id="unimportant_fabrics">Fabrics - By Colour <div class="additional_sidebar" id="unimportant">+</div></li>
+							<ul class="expand_nav">
+								<li class="fabrics_expand_li" id="expanded_text">&nbsp;&nbsp;Orange / Red / Yellow</li>
+								<li class="fabrics_expand_li" id="expanded_text">&nbsp;&nbsp;Blue / Purple / Pink</li>
+								<li class="fabrics_expand_li" id="expanded_text">&nbsp;&nbsp;Green / Neutral</li>
+								<li class="fabrics_expand_li" id="expanded_text">&nbsp;&nbsp;Multi / Christmas</li>
+								<li class="fabrics_expand_li" id="expanded_text">&nbsp;&nbsp;Black / White</li>
+							</ul>
+
+						<li class="sidebar_li" id="unimportant_cotton">Precuts - By Type <div class="additional_sidebar" id="unimportant">+</div> </li>
+							<ul class="expand_nav">
+								<li class="cotton_expand_li" id="expanded_text">&nbsp;&nbsp;Jelly Rolls</li>
+								<li class="cotton_expand_li" id="expanded_text">&nbsp;&nbsp;Fat Quaters</li>
+							</ul>
+
+						<a href="#"><li class="sidebar_li" id="unimportant">Wadding</li></a>
+						<a href="#"><li class="sidebar_li" id="unimportant">Sewing Accessories</li></a>
+
+						<li class="sidebar_li" id="unimportant_threads">Threads - By Type <div class="additional_sidebar" id="unimportant">+</div></li>
+							<ul class="expand_nav">
+								<li class="threads_expand_li" id="expanded_text">&nbsp;&nbsp;Cotton</li>
+								<li class="threads_expand_li" id="expanded_text">&nbsp;&nbsp;Polycotton (moon)</li>
+								<li class="threads_expand_li" id="expanded_text">&nbsp;&nbsp;Shirring</li>
+								<li class="threads_expand_li" id="expanded_text">&nbsp;&nbsp;Nylon</li>
+							</ul>
+
+							<a href="#"><li class="sidebar_li" id="unimportant">Gifts</li></a>
+							<a href="#"><li class="sidebar_li" id="important"><u>Sale!</u></li></a>
+							<a href="#"><li class="sidebar_li" id="unimportant">Kits</li></a>
+					</ul>
+				</nav>
 			</div>
 
-		</div>
+			<div class="writingWrapper">
+      		<section class="items_section">
+                <div id="columns" class="columns_alpha"><img src="item_images/linen_cream.jpg" alt="" class="item_picture"><div class="separator"></div><h3>Linen Look Cotton - Cream</h3><h4>&pound;5.50</h4><a href="#"><div class="banner"><h1>Read More</h1></div></div></a>
+                <div id="columns" class="columns_beta"><img src="item_images/linen_salmon.jpg" alt="" class="item_picture"><div class="separator"></div><h3>Linen Look Cotton - Salmon</h3><h4>&pound;5.50</h4><a href="#"><div class="banner"><h1>Read More</h1></div></div></a>
+								<div id="columns" class="columns_omega"><img src="item_images/cotton_threads.jpg" alt="" class="item_picture"><div class="separator"></div><h3>Cotton Thread - Bundle</h3><h4>&pound;4.50</h4><a href="#"><div class="banner"><h1>Read More</h1></div></div></a>
+          </section>
+								<br><br>
+								<h4 id="page_text_after">Check out some of our other items that we sell in our shop!</h4>
+								<h2 id="twitterLabel">Check Out Our Twitter Feed:</h2>
+			</div>
 
+			<!-- Twitter Object -->
+			<div class="twitterWrapper">
+				<a class="twitter-timeline" href="https://twitter.com/SewNBeads" data-widget-id="506359058966642688">Tweets by @SewNBeads</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
 
-		<!-- Twitter Object -->
-		<div class="twitterWrapper">
-			<a class="twitter-timeline" href="https://twitter.com/SewNBeads" data-widget-id="506359058966642688">Tweets by @SewNBeads</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+			<div class="separator3"></div>
 		</div>
 	</div>
 

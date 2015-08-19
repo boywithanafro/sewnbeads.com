@@ -34,451 +34,474 @@ img, object, embed, video {
     text-decoration: none;
     color: inherit; }
 
-  .headWrapper {
-    text-align: center;
-    height: 280px;
-    width: 99.4%;
-    border-width: 4px;
-    border-style: dashed;
-    border-top-color: #cccccc;
-    border-left-color: #cccccc;
-    border-right-color: #cccccc;
-    border-bottom-color: transparent; }
+    .headWrapper{
+    	text-align: center;
+    	height: 280px;
+    	width: 100%;
+    	border-width: 4px;
+    	border-style: dashed;
+    	border-top-color: #cccccc;
+    	border-left-color: #cccccc;
+    	border-right-color: #cccccc;
+    	border-bottom-color: transparent;
+    	z-index: 1;
+      box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+    }
 
-  #pageTitle {
-    text-align: center;
-    color: #E065CA;
-    margin-top: -265px;
-    font-size: 125px;
-    width: 100%; }
+    #logo_picture{
+    	height: 100px;
+    	width: 100px;
+    	margin: 0 0 0 0;
+    	padding: 0;
+    	display: none;
+    }
 
-  #backupSocialGroup {
-    display: block;
-    float: right;
-    width: 60px;
-    height: auto;
-    margin: -12em 0.5em 0em 0em; }
+    #pageTitle{
+    	text-align: center;
+    	color: #E065CA;
+    	margin-top: -290px;
+    	font-size: 100px;
+    	width: 100%;
+    }
 
-  #backupSocialInstagram {
-    cursor: default; }
+    .left_feature_text{
+    	float: left;
+    	margin-top: -90px;
+    	color: salmon;
+    	padding-left: 10px;
+    }
+    .right_feature_text{
+    	float: right;
+    	margin-top: -90px;
+    	color: salmon;
+    	padding-right: 10px;
+    }
 
-  #backupIconInstagram, #backupIconTwitter {
-    display: none;
-    width: 48px;
-    margin-bottom: 0.5em; }
-
-  #backupIconFacebook {
-    display: none;
-    width: 48px; }
-
-  #socialGroup {
-    float: right;
-    width: 300px;
-    height: auto;
-    margin: -5em 1em 0em 0em; }
-
-  .socialInstagram {
-    width: 48px;
-    width: 48px;
-    padding: 0px;
-    margin: 0em 0.5em 0em 0em; }
-    .socialInstagram:hover {
-      border: 3px dotted #41F0F0;
-      cursor: default; }
-
-  .nav {
-    overflow: hidden;
-    text-align: center;
-    margin-top: -50px;
-    background-color: #E83199;
-    height: auto;
-    margin-top: -20px; }
-    .nav li {
-      text-align: center;
-      display: inline-block;
-      margin-right: 10%;
-      font-size: 30px;
-      width: auto;
-      font-family: "Open Sans Condensed", sans-serif; }
-      .nav li:hover {
-        color: #FAFAFA; }
-
-  .contentWrapper {
-    margin-top: 5.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-width: 8px;
-    border-style: dashed;
-    border-top-color: #E065CA;
-    border-left-color: #E065CA;
-    border-right-color: #A31C8A;
-    border-bottom-color: #A31C8A;
-    height: 2400px;
-    width: 60%;
-    background-color: #FAFAFA;
-    font-family: "Lobster", cursive;
-    color: #cccccc;
-    z-index: 2; }
-
-  #contentTitle {
-    color: #474AEA;
-    text-align: center;
-    font-size: 100px;
-    font-family: "Lobster";
-    text-shadow: 3px 3px 1px #000; }
-
-  .rslides {
-    text-align: center;
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 90%;
-    height: 200px;
-    padding: 0;
-    margin: 0 auto;
-    border-radius: 14px; }
-    .rslides li {
-      -webkit-backface-visibility: hidden;
-      position: absolute;
-      display: none;
-      width: 100%;
-      height: 200px;
-      left: 0;
-      top: 0; }
-      .rslides li:first-child {
-        position: relative;
-        display: block; }
-    .rslides img {
-      display: block;
-      height: auto;
+    #backupIconInstagram{
+    	display: none;
+    	width: 48px;
+    	margin-top: -8em;
       float: left;
-      width: 100%;
-      height: 200px;
-      border: 0;
-      border-radius: 14px; }
+    }
 
-  .writingWrapper {
-    margin: 0 auto;
-    width: 85%;
-    height: auto; }
-    .writingWrapper > p {
+    #backupIconPintrest{
+    	display: none;
+    	width: 48px;
+    	margin-top: -4.8em;
+      float: left;
+    }
+
+    #backupIconTwitter{
+    	display: none;
+    	width: 48px;
+    	margin-top: -4.8em;
+      float: right;
+    }
+
+    #backupIconFacebook{
+    	display: none;
+    	width: 48px;
+      float: right;
+      margin-top: -8em;
+    }
+
+    #socialGroup{
+    	float: right;
+    	width: 300px;
+    	height: auto;
+    	margin: -5em 1em 0em 0em;
+    }
+
+    .socialInstagram{
+    	width: 48px;
+    	width: 48px;
+    	padding: 0px;
+    	margin: 0em 0.5em 0em 0em;
+    }
+
+    .socialInstagram:hover{
+    	border: 3px dotted #41F0F0;
+    	cursor: default;
+    }
+
+    .nav{
+    	overflow: hidden;
+    	text-align: center;
+    	background-color: #E83199;
+    	height: auto;
+    	margin-top: -15px;
+    	position: relative;
+    	z-index: 2;
+    }
+
+    .nav li{
+    	text-align: center;
+    	display: inline-block;
+    	margin-right: 10%;
+    	font-size: 30px;
+    	width: auto;
+    	font-family: 'Open Sans Condensed', sans-serif;
+    	position: relative;
+    	z-index: 3;
+    }
+
+    .nav li:hover{
+    	color: #FAFAFA;
+    }
+
+    .fixed{
+    	position: fixed;
+    	top: 0;
+    	width: 100%;
+    	z-index: 20;
+    	margin-top: 20px;
+    }
+
+    .contentWrapper{
+    	margin-top: 3.5em;
+    	margin-left: auto;
+    	margin-right: auto;
+    	height: 2800px;
+    	width: 100%;
+    	font-family: 'Lobster', cursive;
+    	background-color: #FFFFFF;
+    	z-index: 11;
+    	position: relative;
+     box-shadow:         0px -2px 5px 0px rgba(255, 50, 50, 0.45);
+    }
+
+    #contentTitle{
+    	color: #474AEA;
+    	text-align: center;
+    	font-size: 70px;
+    	font-family: "Lobster";
+    }
+
+    .shop_svg_icon{
+      height: 45px;
+      width: 45px;
+      display: inline;
+    }
+
+    .textAnnouncer{
+    	width: 70%;
+    	height: 30px;
+    	background-color: #40D6BA;
+    	text-align: center;
+    	margin: 0 auto;
+    }
+
+    .textAnnouncer > p{
+    	font-size: 18px;
+    	padding-top: 3px;
+    	color: #FFFFFF;
+    	font-family: 'Merriweather', serif;
+    	font-style: italic;
+    }
+
+    .rslides {
+    	text-align: center;
+    	position: relative;
+    	list-style: none;
+    	overflow: hidden;
+    	width: 70%;
+    	height: 200px;
+    	padding: 0;
+    	margin: 0 auto;
+    	border-radius: 14px;
+    	}
+
+    .rslides li {
+    	-webkit-backface-visibility: hidden;
+    	position: absolute;
+    	display: none;
+    	width: 100%;
+    	height: 200px;
+    	left: 0;
+    	top: 0;
+    	}
+
+    .rslides li:first-child {
+    	position: relative;
+    	display: block;
+    	}
+
+    .rslides img {
+    	display: block;
+    	height: auto;
+    	float: left;
+    	width: 100%;
+    	height: 200px;
+    	border: 0;
+    	border-radius: 14px;
+    	}
+
+    .separator1{
+  		width: 70%;
+  		margin: 0 auto;
+  		border: 1px solid #8C5ED6;
+  		margin-top: 40px;
+    }
+
+    .writingWrapper{
+    	margin: 0 auto;
+    	width: 68%;
+    	height: auto;
+    	margin-top: 30px;
+    }
+
+    #main_text{
       text-align: center;
-      color: #000;
+      font-family: "Ropa Sans", sans-serif;
       font-size: 25px;
-      font-family: "Ropa Sans", sans-serif; }
-    .writingWrapper > h6 {
-      color: #000;
-      text-align: center;
-      font-family: "Ropa Sans", sans-serif; }
+      width: auto;
+      height: auto;
+    }
+    .text_hyperlink{
+      color: #664FE3;
+      font-family: "Ropa Sans", sans-serif;
+      font-size: 25px;
+      font-weight: normal;
+    }
+    #text_new_workshops{
+      text-decoration: underline;
+      font-family: "Lobster";
+    }
 
-  #class_hyperlink{
-    color: #664FE3;
-    font-family: "Ropa Sans", sans-serif;
-    font-size: 25px;
+
+
+  .featClass {
+    height: 250px;
+    width:  100%;
+    border: 2px solid red;
+    margin-top: 30px;
   }
 
-  #fashion_discount{
-    width: 40%;
-    height: 50px;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 10px;
-    background-color: #652161;
+  .featClass:hover{
+    background-color: #F24981;
+  }
+
+  .featClass:hover .text_right_description{
     color: #FFFFFF;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 15px;
-    position: relative;
-    z-index: 20;
   }
-
-  #fashion_discount:hover{
-    background-color: #216525;
-  }
-
-  #featImg1 {
-    height: 1000px;
-    width: 100%;
-    border: 1px solid red;
-  }
-
-  #featImg2 {
-    height: 400px;
-    width: 100%;
-    border: 1px solid red;
-  }
-
-  #featImgCaption {
-    color: #999095;
-    font-size: 23px;
-    font-weight: bold; }
-
-  #motoWrapper {
+  .pic_left{
     float: left;
-    width: 14%;
+    height: 100%;
+    width: 40%;
+  }
+
+  .text_right{
+    color: #664FE3;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: "Lobster";
+  }
+
+  .text_right_description{
+    color: #8A304E;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+
+
+  #text_small_caption{
+    text-align: center;
+    color: #A1A1A1;
+    font-size: 20px;
+  }
+
+  #featImgGallery{
+    width: 100%;
     height: auto;
-    z-index: 10;
-    height: 1000px;
-    text-align: center;
-    margin-top: 20em; }
+    margin: 0 auto;
+    border: 1px solid yellow;
+  }
 
-  #moto {
-    display: block;
-    margin-left: -115%;
+  #featImgTL{
+    width: 49%;
+    height: auto;
     float: left;
-    margin-top: 1.5em;
-    width: 900px;
-    -ms-transform: rotate(270deg);
-    /* IE 9 */
-    -webkit-transform: rotate(270deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(270deg);
-    color: #77BFF2;
-    font-size: 6em;
-    letter-spacing: 10px; }
+  }
 
-  .twitterWrapper {
-    width: 330px;
-    height: 11em;
+  #featImgTR{
+    width: 49%;
+    height: auto;
     float: right;
-    margin-top: -151em;
-    margin-right: 10px; }
+  }
 
-  .footerWrapper {
-    clear: both;
-    width: 100%;
-    height: auto;
-    margin: 5em auto 2em auto;
-    background-color: #E83199; }
-    .footerWrapper > p {
-      text-align: center;
-      font-size: 25px; }
-    .footerWrapper > h6 {
-      text-align: center; }
+  #twitterLabel{
+  	display: none;
+  }
+
+  .twitterWrapper{
+  	width: 14%;
+  	float: right;
+  	margin-top: -147em;
+  	margin-right: 2em;
+  	height: 800px;
+    position: relative;
+    z-index: 70;
+  }
+
+  .separator2{
+  		width: 70%;
+  		margin: -50px auto 0 auto;
+  		border: 1px solid #8C5ED6;
+      position: relative;
+      z-index: 12;
+  	}
+
+  .footerWrapper{
+  	clear: both;
+  	width: 100%;
+  	height: auto;
+  	margin: 4em auto 1em auto;
+  	background-color: #E83199;
+  }
+
+  .footerWrapper > p{
+  	text-align: center;
+  	font-size: 25px;
+  }
+
+  .footerWrapper > h6{
+  	text-align: center;
+  }
 
   .zeroMargin_desktop {
-    margin-left: 0; }
-
+      margin-left: 0;
+  }
   .hide_desktop {
-    display: none; }
-@media screen and (max-width: 1798px) {
-  /*Size ajustment to the Twitter side widget */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
+      display: none;
+  }
 
-  .twitterWrapper {
-    width: 270px;
-    margin-right: 10px; } }
-@media screen and (max-width: 1488px) {
-  /*Size ajustment to the Twitter side widget again!!! */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
+  @media screen and (max-width: 1800px) {
+    /*First Twitter collision with featuring classes */
+    .gridContainer {
+      width: 88.5%;
+      padding-left: 0.75%;
+      padding-right: 0.75%;
+      margin: auto;
+      clear: none;
+      float: none;
+      margin-left: auto; }
 
-  .twitterWrapper {
-    width: 220px;
-    margin-right: 0.5em; } }
-@media screen and (max-width: 1444px) {
-  /*Ajustment for placing of moto inbetween twitter widet placements */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
 
-  #moto {
-    height: 5em;
-    font-size: 5em; }
+    .featClass{
+      width: 90%;
+      margin: 30px auto 0 auto;
+    }
+  }
 
-  #motoWrapper {
-    margin-top: 10em; } }
-@media screen and (max-width: 1310px) {
-  /*Deletion of the Twitter side Widget and size ajustment to the moto */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
+    @media screen and (max-width: 1400px) {
+      /*Second Twitter collision with featuring classes */
+      .gridContainer {
+        width: 88.5%;
+        padding-left: 0.75%;
+        padding-right: 0.75%;
+        margin: auto;
+        clear: none;
+        float: none;
+        margin-left: auto; }
 
-  #featImg1{
-    height: 900px;
-  }}
 
-@media screen and (max-width: 1300px) {
-  /*Deletion of the Twitter side Widget and size ajustment to the moto */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
+      #main_text{
+        width: 99%;
+      }
+  }
 
-  .twitterWrapper {
-    display: none; }
+  @media screen and (max-width: 1133px) {
+    /*Backup Social Icons kick in */
+    .gridContainer {
+      width: 88.5%;
+      padding-left: 0.75%;
+      padding-right: 0.75%;
+      margin: auto;
+      clear: none;
+      float: none;
+      margin-left: auto; }
 
-  .contentWrapper {
-    height: 2200px;
-    width: 75%; }
+    #socialGroup{
+      display: none;
+    }
 
-  #moto {
-    height: 5em;
-    font-size: 5em; } }
+    #backupIconTwitter{
+      display: block;
+    }
+    #backupIconFacebook{
+      display: block;
+    }
+    #backupIconInstagram{
+      display: block;
+    }
+    #backupIconPintrest{
+      display: block;
+    }
 
-@media screen and (max-width: 1290px) {
-  /*Moto Arrangement Changed For Better Laptop Support */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
+  }
 
-  #moto {
-    height: 6.5em;
-    font-size: 4.5em; } }
-@media screen and (max-width: 1251px) {
-  /*Instagram Icon Vertical Arrangement and size ajustment to Horizontal Arrangement */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
+  @media screen and (max-width: 1107px) {
+    /*Mobile view work in progress */
+    .gridContainer {
+      width: 88.5%;
+      padding-left: 0.75%;
+      padding-right: 0.75%;
+      margin: auto;
+      clear: none;
+      float: none;
+      margin-left: auto; }
 
-  #backupIconInstagram {
-    display: block; }
 
-  #socialGroup {
-    float: right;
-    width: 240px;
-    height: auto;
-    margin: -5em 0.3em 0em 0em; }
+    .twitterWrapper{
+      display: none;
+    }
 
-  #iconInstagram {
-    display: none; }
+    #main_text{
+      width: auto;
+    }
+    .featClass{
+      width: 100%;
+    }
 
-  #moto {
-    height: 6.5em;
-    font-size: 4.5em; } }
-@media screen and (max-width: 1131px) {
-  /*Twitter Icon Vertical Arrangement and size ajustment to Horizontal Arrangement */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
+    .writingWrapper{
+      width: 76%;
+    }
+  }
 
-  #backupIconTwitter {
-    display: block; }
+  @media screen and (max-width: 800px) {
+    /*Tiding things up - no social icons*/
+    .gridContainer {
+      width: 88.5%;
+      padding-left: 0.75%;
+      padding-right: 0.75%;
+      margin: auto;
+      clear: none;
+      float: none;
+      margin-left: auto; }
 
-  #iconTwitter {
-    display: none; }
+      #backupIconTwitter{
+        display: none;
+      }
+      #backupIconFacebook{
+        display: none;
+      }
+      #backupIconInstagram{
+        display: none;
+      }
+      #backupIconPintrest{
+        display: none;
+      }
 
-  #socialGroup {
-    width: 190px;
-    margin-right: -3px; }
+      .left_feature_text{
+        display: none;
+      }
+      .right_feature_text{
+        display: none;
+      }
 
-  #moto {
-    height: 7.5em;
-    font-size: 4.5em; } }
-@media screen and (max-width: 1033px) {
-  /*Facebook Icon Vertical Arrangement and deletion of Horizontal Arrangement */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
-
-  #backupIconFacebook {
-    display: block; }
-
-  #iconFacebook, #socialGroup, .socialInstagram {
-    display: none; }
-
-  #moto {
-    height: 10em;
-    font-size: 3.5em; } }
-@media screen and (max-width: 918px) {
-  /*Size ajustment to the moto just before deletion from webpage */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
-
-  #moto {
-    height: 10.2em;
-    font-size: 4em; 
-    } 
-  #featImg1{
-    height: 700px;
-  }}
-@media screen and (max-width: 785px) {
-  /*Size ajustment to the content title for laptop support (Overlapping) Again!!! */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
-
-  #backupSocialGroup, #moto {
-    display: none; } 
-  #featImg1{
-    height: 600px;
-  }}
-@media screen and (max-width: 590px) {
-  /*Height adjustment to the content wrapper and final overall positions */
-  .gridContainer {
-    width: 88.5%;
-    padding-left: 0.75%;
-    padding-right: 0.75%;
-    margin: auto;
-    clear: none;
-    float: none;
-    margin-left: auto; }
-
-  .contentWrapper {
-    height: 2200px;
-    width: 800px;
-    margin-left: 8.5%; }
-
-  .nav {
-    width: 900px; }
-
-  .footerWrapper, .headWrapper, #pageTitle {
-    width: 899px; } }
+  }

@@ -53,21 +53,43 @@ a{
 .headWrapper{
 	text-align: center;
 	height: 280px;
-	width: 99.4%;
+	width: 99.6%;
 	border-width: 4px;
 	border-style: dashed;
 	border-top-color: #cccccc;
 	border-left-color: #cccccc;
 	border-right-color: #cccccc;
 	border-bottom-color: transparent;
+	z-index: 1;
+}
+
+#logo_picture{
+	height: 100px;
+	width: 100px;
+	margin: 0 0 0 0;
+	padding: 0;
+	display: none;
 }
 
 #pageTitle{
 	text-align: center;
 	color: #E065CA;
-	margin-top: -265px;
-	font-size: 125px;
+	margin-top: -290px;
+	font-size: 100px;
 	width: 100%;
+}
+
+.left_feature_text{
+	float: left;
+	margin-top: -90px;
+	color: salmon;
+	padding-left: 10px;
+}
+.right_feature_text{
+	float: right;
+	margin-top: -90px;
+	color: salmon;
+	padding-right: 10px;
 }
 
 #backupSocialGroup{
@@ -123,7 +145,9 @@ a{
 	text-align: center;
 	background-color: #E83199;
 	height: auto;
-	margin-top: -20px;
+	margin-top: -15px;
+	position: relative;
+	z-index: 2;
 }
 
 .nav li{
@@ -133,6 +157,8 @@ a{
 	font-size: 30px;
 	width: auto;
 	font-family: 'Open Sans Condensed', sans-serif;
+	position: relative;
+	z-index: 3;
 }
 
 .nav li:hover{
@@ -148,29 +174,44 @@ a{
 }
 
 .contentWrapper{
-	margin-top: 5.5em;
+	margin-top: 3.5em;
 	margin-left: auto;
 	margin-right: auto;
-	border-width: 5px;
-	border-style: dashed;
-	border-top-color: #1497A8;
-	border-left-color: #1497A8;
-	border-right-color: #A31C8A;
-	border-bottom-color: #A31C8A;
-	height: 1400px;
-	width: 60%;
-	background: url(http://subtlepatterns.com/patterns/scribble_light.png);
+	height: 1600px;
+	width: 100%;
 	font-family: 'Lobster', cursive;
-	color: #cccccc;
+	background-color: #FFFFFF;
 	z-index: 11;
 	position: relative;
+box-shadow:         0px -2px 5px 0px rgba(255, 50, 50, 0.45);
 }
 
 #contentTitle{
 	color: #474AEA;
 	text-align: center;
-	font-size: 100px;
+	font-size: 70px;
 	font-family: "Lobster";
+}
+
+.svg_shopping_icon{
+	height: 50px;
+	width: 50px;
+}
+
+.textAnnouncer{
+	width: 70%;
+	height: 30px;
+	background-color: #40D6BA;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.textAnnouncer > p{
+	font-size: 18px;
+	padding-top: 3px;
+	color: #FFFFFF;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
 }
 
 .rslides {
@@ -178,7 +219,7 @@ a{
 	position: relative;
 	list-style: none;
 	overflow: hidden;
-	width: 90%;
+	width: 70%;
 	height: 200px;
 	padding: 0;
 	margin: 0 auto;
@@ -210,35 +251,109 @@ a{
 	border-radius: 14px;
 	}
 
-.writingWrapper{
-	margin: 0 auto;
-	width: 88%;
-	height: 30%;
-	margin-top: 60px;
+.separator2{
+		width: 70%;
+		margin: 0 auto;
+		border: 1px solid #8C5ED6;
+		margin-top: 40px;
+	}
+.separator4{
+	display: none;
 }
 
-.writingWrapper > h6{
-	color: #000;
-	text-align: center;
-	font-family: 'Ropa Sans', sans-serif;
+.hamburger_categories{
+	display: none;
+}
+
+.sidebar{
+		float: left;
+		width: 250px;
+		height: 1000px;
+		margin-left: 6%;
+		margin-top: 32px;
+	}
+
+.sidebar_ul{
+	list-style: none;
+}
+
+.sidebar_li{
+	color: #40D6BA;
+	font-size: 20px;
+	border-top: 1px solid #8C5ED6;
+	border-bottom: 1px solid #8C5ED6;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#important:hover{
+	color: salmon;
+}
+
+#unimportant:hover{
+	color: #cccccc;
+}
+
+#unimportant_threads:hover{
+	color: #cccccc;
+}
+#unimportant_fabrics:hover{
+	color: #cccccc;
+}
+#unimportant_cotton:hover{
+	color: #cccccc;
+}
+
+.additional_sidebar{
+	float: right;
+}
+
+.fabrics_expand_li{
+	display: none;
+	list-style: none;
+}
+.fabrics_expand_li:hover{
+	color: #40D6BA;
+}
+
+.threads_expand_li{
+	display: none;
+	list-style: none;
+}
+.threads_expand_li:hover{
+	color: #40D6BA;
+}
+
+.cotton_expand_li{
+	display: none;
+	list-style: none;
+}
+.cotton_expand_li:hover{
+	color: #40D6BA;
+}
+
+.writingWrapper{
+	margin: 0 auto;
+	width: 78%;
+	height: 30%;
+	margin-top: 30px;
 }
 
 .items_section{
-	width: 100%;
+	width: 63.1%;
 	height: 100%;
 	display: block;
+	margin: 0 auto;
 }
 
 #columns{
-	width: 30%;
-	height: 78%;
-	background-color: #ffffff;
+	width: 275px;
+	height: 350px;
+	background-image: url("../p2.png");
     box-shadow: 0 10px 6px -6px #777;
-    /*box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;*/
     text-align: center;
     position: relative;
     display: block;
-    transition: opacity 2s ease-in-out;
 }
 
 #columns:hover .item_picture{
@@ -246,14 +361,6 @@ a{
 	    -ms-transform: scale(1.1);
 	        transform: scale(1.1);
 }
-
-/*#columns:before, #columns:after{
-	box-shadow:0 0 20px rgba(0,0,0,0.8);
-}
-
-#columns:after{
-	transform:skew(8deg) rotate(3deg);
-}*/
 
 .columns_alpha{
 	float: left;
@@ -265,7 +372,8 @@ a{
 }
 
 .columns_omega{
-	float: right;
+	float: left;
+	margin-left: 5%;
 }
 
 .item_picture{
@@ -314,40 +422,28 @@ a{
 	font-size: 18px;
 }
 
-#motoWrapper{
-	float: left;
-	width: 14%;
-	height: auto;
-	z-index: 10;
-	height: 1000px;
-	text-align: center;
-	margin-top: 20em;
+#page_text_after{
+	margin-left: 38%;
 }
 
-#moto{
-        display: block;
-	margin-left: -115%;
-	float: left;
-	margin-top: 1.5em;
-	width: 900px;
-	-ms-transform: rotate(270deg); /* IE 9 */
-        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-        transform: rotate(270deg);
-        color: #77BFF2;
-        font-size: 6em;
-        letter-spacing: 10px;
+#twitterLabel{
+	display: none;
 }
-
-
 
 .twitterWrapper{
-    display: block;
-	width: 330px;
-	height: 10em;
+	width: 300px;
 	float: right;
-	margin-top: -88em;
-	margin-right: 10px;
+	margin-top: -30em;
+	margin-right: 2em;
+	height: 600px;
 }
+
+.separator3{
+		width: 70%;
+		margin: 0 auto;
+		border: 1px solid #8C5ED6;
+		clear: both;
+	}
 
 .footerWrapper{
 	clear: both;
@@ -373,247 +469,283 @@ a{
     display: none;
 }
 
-@media screen and (max-width: 1798px) { /*Size ajustment to the Twitter side widget*/
 
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
+@media screen and (max-width: 1880px) {
+  /*Ajustment for placing of moto inbetween twitter widet placements */
+  .gridContainer {
+    width: 88.5%;
+    padding-left: 0.75%;
+    padding-right: 0.75%;
+    margin: auto;
+    clear: none;
+    float: none;
+    margin-left: auto; }
 
-	.twitterWrapper{
-        display: block;
-		width: 270px;
-		margin-right: 10px;
-}
+.items_section{
+		-webkit-transform: scale(0.9, 0.9);
+		    -ms-transform: scale(0.9, 0.9);
+		        transform: scale(0.9, 0.9);
+		width: 70%;
+		margin-top: -20px;
+	}	}
 
-}
+	@media screen and (max-width: 1700px) {
+	  /*Tranforming the scale of the items, making the item wrapper pixels */
+	  .gridContainer {
+	    width: 88.5%;
+	    padding-left: 0.75%;
+	    padding-right: 0.75%;
+	    margin: auto;
+	    clear: none;
+	    float: none;
+	    margin-left: auto; }
 
-@media screen and (max-width: 1488px) { /*Size ajustment to the Twitter side widget again!!!*/
+	.sidebar{
+		margin-left: 3%;
+		}
+	.items_section{
+		-webkit-transform: scale(0.9, 0.9);
+		    -ms-transform: scale(0.9, 0.9);
+		        transform: scale(0.9, 0.9);
+		width: 1000px;
+		}
+		.twitterWrapper{
+		-webkit-transform: scale(0.9, 0.9);
+		    -ms-transform: scale(0.9, 0.9);
+		        transform: scale(0.9, 0.9);
+		margin-right: -10px;
+		margin-top: -485px;
+		}}
 
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
+		@media screen and (max-width: 1540px) {
+		  /*Just tranforming the scale of the sidebar */
+		  .gridContainer {
+		    width: 88.5%;
+		    padding-left: 0.75%;
+		    padding-right: 0.75%;
+		    margin: auto;
+		    clear: none;
+		    float: none;
+		    margin-left: auto; }
 
-	.twitterWrapper{
-        display: block;
-		width: 220px;
-		margin-right: 0.5em;
-	}
+		.sidebar{
+			-webkit-transform: scale(0.9, 0.9);
+			    -ms-transform: scale(0.9, 0.9);
+			        transform: scale(0.9, 0.9);
+			margin-top: -15px;
+			}}
 
-	.banner:before{
-  		margin-left: 30%;
-}
+			@media screen and (max-width: 1500px) {
+				/*Near end scale transformations to the items */
+				.gridContainer {
+					width: 88.5%;
+					padding-left: 0.75%;
+					padding-right: 0.75%;
+					margin: auto;
+					clear: none;
+					float: none;
+					margin-left: auto; }
 
-}
+					.items_section{
+						margin: 0 auto;
+						height: 1000px;
+						margin-top: 0;
+						width: 700px;
+						}
+					.columns_alpha{
+						float: left;
+						margin-left: 17px;
+						margin-top: 20px;
+					}
 
-@media screen and (max-width: 1444px) { /*Ajustment for placing of moto inbetween twitter widet placements*/
+					.columns_beta{
+						float: right;
+						margin-top: 20px;
+						margin-right: 15px;
+					}
 
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
+					.columns_omega{
+						float: left;
+						margin-top: 80px;
+						margin-left: 2.5%;
+					}
 
-	#moto{
-		height: 5em;
-		font-size: 5em;
-	}
+					#columns{
+						-webkit-transform: scale(1.1, 1.1);
+						    -ms-transform: scale(1.1, 1.1);
+						        transform: scale(1.1, 1.1);
+					}
+					}
 
-	#motoWrapper{
-	margin-top: 10em;
-}
+			@media screen and (max-width: 1400px) {
+				/*Near end scale transformations to the items */
+				.gridContainer {
+					width: 88.5%;
+					padding-left: 0.75%;
+					padding-right: 0.75%;
+					margin: auto;
+					clear: none;
+					float: none;
+					margin-left: auto; }
 
-}
+					}
 
-@media screen and (max-width: 1300px) { /*Deletion of the Twitter side Widget and size ajustment to the moto*/
+	@media screen and (max-width: 1060px) {
+	  /*Mobile view for now on*/
+	  .gridContainer {
+	    width: 88.5%;
+	    padding-left: 0.75%;
+	    padding-right: 0.75%;
+	    margin: auto;
+	    clear: none;
+	    float: none;
+	    margin-left: auto; }
 
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
+			.sidebar{
+				display: none;
+				height: 500px;
+				width: 70%;
+				margin: 0 auto;
+				position: relative;
+				z-index: 5;
+				float: none;
+				text-align: center;
+			}
+			.twitterWrapper{
+				display: block;
+				float: none;
+				clear: both;
+				padding: 0;
+				margin-top: 910px;
+				margin-left: 25%;
+				width: 70%;
+			}
 
-	.twitterWrapper{
-		display: none;
-	}
+			.contentWrapper{
+				height: 3900px;
+			}
 
-	.contentWrapper{
-		width: 75%;
-	}
+			.items_section{
+				width: 90%;
+				height: auto;
+				z-index: 4;
+				margin-top: 10px;
+			}
 
-	#moto{
-		height: 5em;
-		font-size: 5em;
-	}
-	.banner:before{
-  		margin-left: 32%;
-}
-}
+			.right_feature_text{
+				display: none;
+			}
 
-@media screen and (max-width: 1290px) { /*Moto Arrangement Changed For Better Laptop Support*/
+			.left_feature_text{
+				display: none;
+			}
+			.writingWrapper{
+				width: 90%;
+			}
+			.textAnnouncer{
+				width: 90%;
+			}
+			.rslides{
+				width: 90%;
+			}
+			.separator2{
+				width: 90%;
+			}
+			#columns{
+				margin: 0 auto 100px auto;
+				width: 100%;
+				height: 30%;
+				float: none;
+			}
 
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
+			.separator3{
+				display: none;
+			}
 
-	#moto{
-		height: 6.5em;
-		font-size: 4.5em;
-	}
+			#contentTitle{
+				font-size: 100px;
+			}
 
-}
+			.edge-dash{
+				display: none;
+			}
 
-@media screen and (max-width: 1251px) { /*Instagram Icon Vertical Arrangement and size ajustment to Horizontal Arrangement*/
+			.hamburger_categories{
+				display: block;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+				font-size: 40px;
+			}
+			.separator4{
+				width: 90%;
+				margin: 0 auto;
+				border: 1px solid #8C5ED6;
+				display: block;
+			}
+			.hamburger_categories:hover{
+					color: #ccc;
+			}
 
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
+			#backupSocialGroup{
+				display: none;
+				position: relative;
+				z-index: 20;
+			}
 
-	#backupSocialGroup{
+			#socialGroup{
+				display: none;
+			}
 
-	}
+			#columns > h3{
+				font-size: 32px;
+				padding-top: 0px;
+			}
 
-	#backupIconInstagram{
-		display: block;
-	}
+			#columns > h4{
+				font-size: 28px;
+			}
 
-	#socialGroup{
-		float: right;
-		width: 240px;
-		height: auto;
-		margin: -5em 0.3em 0em 0em;
-	}
+			.banner{
+				width: 35%;
+				left: 67%;
+				margin-top: -54px;
+				height: 40px;
+			}
+			.banner:before{
+			  margin-left: 39%;
+				border-bottom: 20px solid transparent;
+			}
+			.banner > h1{
+				font-size: 36px;
+				margin-top: -9px;
+			}
 
-	#iconInstagram{
-		display: none;
-	}
+			.sidebar_li{
+				font-size: 33px;
+				background-color: #FFFFFF;
+			}
 
-	#moto{
-		height: 6.5em;
-		font-size: 4.5em;
-	}
+			#expanded_text{
+				font-size: 28px;
+				background-color: #FFFFFF;
+			}
 
-}
+			#twitterLabel{
+				display: block;
+				text-align: center;
+				font-size: 40px;
+				text-decoration: underline;
+			}
 
-@media screen and (max-width: 1131px) { /*Twitter Icon Vertical Arrangement and size ajustment to Horizontal Arrangement*/
+			#columns:hover .item_picture{
+				-webkit-transform: scale(1);
+				    -ms-transform: scale(1);
+				        transform: scale(1);
+								opacity: 0.3;
+			}
 
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
-
-	#backupIconTwitter{
-		display: block;
-	}
-
-	#iconTwitter{
-		display: none;
-	}
-
-	#socialGroup{
-		width: 190px;
-		margin-right: -3px;
-	}
-
-	#moto{
-		height: 7.5em;
-		font-size: 4.5em;
-	}
-
-}
-
-@media screen and (max-width: 1033px) { /*Facebook Icon Vertical Arrangement and deletion of Horizontal Arrangement*/
-
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
-
-	#backupIconFacebook{
-		display: block;
-	}
-
-	#iconFacebook{
-		display: none;
-	}
-
-	#socialGroup{
-		display: none;
-	}
-
-	.socialInstagram{
-		display: none;
-	}
-
-	#moto{
-		height: 9em;
-		font-size: 4em;
-	}
-	.banner:before{
-  		margin-left: 29%;
-	}
-
-}
-
-@media screen and (max-width: 785px) { /*Size ajustment to the content title for laptop support (Overlapping) Again!!!*/
-
-	.gridContainer {
-		width: 88.5%;
-		padding-left: 0.75%;
-		padding-right: 0.75%;
-		margin: auto;
-		clear: none;
-		float: none;
-		margin-left: auto;
-	}
-
-    #backupSocialGroup{
-    	display: none;
-    }
-
-    #moto{
-    	display: none;
-    }
-
-}
+			#page_text_after{
+				display: none;
+			}
+		}

@@ -887,7 +887,7 @@ a{
 	border-left-color: #E065CA;
 	border-right-color: #A31C8A;
 	border-bottom-color: #A31C8A;
-	height: 1200px;
+	height: 1900px;
 	width: 60%;
 	background-color: #FAFAFA;
 	font-family: 'Lobster', cursive;
@@ -1009,6 +1009,40 @@ a{
 	border: 3px dashed #000;
 }
 
+#fashionShowBigImage{
+	width: 90%;
+	height: 450px;
+	border: 1px solid green;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#fashionShowBigImage  ul{
+	list-style: none;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	overflow: none;
+	z-index: 15;
+	position: relative;
+}
+
+#fashionShowBigImage li{
+	height: 100%;
+	width: 100%;
+	z-index: 15;
+	position: relative;
+}
+
+#imageOnShow{
+	height: 100%;
+	width: 100%;
+}
+
+#morePicsToFollow{
+	font-size: 24px;
+	text-align: center;
+}
 
 #motoWrapper{
 	float: left;
